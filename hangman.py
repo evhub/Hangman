@@ -54,7 +54,7 @@ class hangman(object):
         self.get_dictionary(dictionary_url)
         self.yes = {}
         self.no = ""
-    def get_dictionary(self, url=None):
+    def get_dictionary(self, url):
         url = makestr(url)
         self.words = []
         path = str(urllib.urlretrieve(url)[0])
